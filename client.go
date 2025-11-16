@@ -128,7 +128,7 @@ func (c *Client) fetchToken() (string, error) {
 
 	// Cache the token
 	c.cache = &CachedToken{
-		AccessToken: tokenResp.AccessToken,
+		AccessToken: tokenResp.TokenType + " " + tokenResp.AccessToken,
 		ExpiresAt:   time.Now().Add(time.Duration(tokenResp.ExpiresIn) * time.Second),
 	}
 
