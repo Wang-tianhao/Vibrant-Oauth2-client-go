@@ -132,7 +132,7 @@ func (c *Client) fetchToken() (string, error) {
 		ExpiresAt:   time.Now().Add(time.Duration(tokenResp.ExpiresIn) * time.Second),
 	}
 
-	return tokenResp.AccessToken, nil
+	return c.cache.AccessToken, nil
 }
 
 // ClearCache clears the cached token, forcing a new token fetch on next GetToken call
