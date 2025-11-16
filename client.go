@@ -14,7 +14,7 @@ import (
 
 const (
 	// VibrantTokenEndpoint is the OAuth2 token endpoint for Vibrant
-	VibrantTokenEndpoint = "https://oauth.vibrant.app/oauth/token"
+	VibrantTokenEndpoint = "https://api.vibrant-wellness.com/v1/oauth2/token"
 
 	// Environment variable names
 	EnvClientID     = "VIBRANT_CLIENT_ID"
