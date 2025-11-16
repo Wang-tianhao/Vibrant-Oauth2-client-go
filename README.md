@@ -1,6 +1,12 @@
 # Vibrant OAuth2 Client for Go
 
+[![Go Version](https://img.shields.io/badge/Go-%3E%3D%201.21-blue.svg)](https://golang.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)](CHANGELOG.md)
+
 A simple, thread-safe Go library for authenticating with Vibrant OAuth2 using the client credentials grant type. This library handles token caching and automatic refresh, so you can focus on building your application.
+
+**Current Version:** v1.0.0 | [Changelog](CHANGELOG.md)
 
 ## Features
 
@@ -13,7 +19,11 @@ A simple, thread-safe Go library for authenticating with Vibrant OAuth2 using th
 ## Installation
 
 ```bash
+# Get the latest version
 go get github.com/Wang-tianhao/Vibrant-Oauth2-client-go
+
+# Or specify a version
+go get github.com/Wang-tianhao/Vibrant-Oauth2-client-go@v1.0.0
 ```
 
 ## Configuration
@@ -95,6 +105,10 @@ The library returns errors in the following cases:
 - Network errors when communicating with the OAuth endpoint
 - Invalid responses from the OAuth endpoint
 - HTTP errors (non-200 status codes)
+
+## Versioning
+
+This project follows [Semantic Versioning](https://semver.org/). For available versions, see the [releases page](https://github.com/Wang-tianhao/Vibrant-Oauth2-client-go/releases) or the [CHANGELOG](CHANGELOG.md).
 
 ## License
 
